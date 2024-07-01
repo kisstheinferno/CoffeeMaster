@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href={% static "css/coffee.css" %} />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <nav class="head">
+      <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="Coffee Masters Logo" width="35"> 
+      Coffee Masters
+    </nav>
+    <div class="page">
+      <section class="order box">
+        <h2 class="title">ITEMS</h2>
+        <ul class="items">
+          <li class="item">
+            <div class="item-quantity">1x</div>
+            <div class="item-title">Cappucino</div>
+            <div class="item-price">$6.00</div>
+            <ul class="item-options-list">
+              <li class="item-option">Light Foam</li>
+            </ul>
+          </li>
+          <li class="item">
+            <div class="item-quantity">1x</div>
+            <div class="item-title">Cappucino</div>
+            <div class="item-price">$7.90</div>
+            <ul class="item-options-list">
+              <li class="item-option">Almond Milk</li>
+              <li class="item-option">Double Espresso Shot</li>
+            </ul>
+          </li>
+          <li class="item">
+            <div class="item-quanity">1x</div>
+            <div class="item-title">Croissant</div>
+            <div class="item-price">$5.37</div>
+            <ul class="item-options-list">
+              <li class="item-option">Butter</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="payment">
+        <div class="name-box box">
+          <h2 class="title">NAME</h2>
+          <div class="input-group">
+            <fieldset>
+              <legend class="user-input" id="name">
+                Name for order
+              </legend>
+              <label class="user-input-label">
+                Robert Dylan Garcia
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="cc-box box">
+          <h2 class="title">PAYMENT</h2>
+          <div class="input-group">
+            <label class="uil" for="cc">Carder Number</label>
+            <input type="text" class="ui" id="cc">
+          </div>
+          <div class="input-group">
+            <label class="uil" for="ccv"> CCV Number</label>
+            <input type="text" class="ccv-input" id="ccv">
+          </div>
+        </div>
+      </section>
+      <section class="total">
+        <table class="totals-table">
+          <tbody>
+            <tr>
+              <td>Subtotal:</td>
+              <td>$19.27</td>
+            </tr>
+            <tr>
+              <td>Tax:</td>
+              <td>$0.96</td>
+            </tr>
+            <tr class="final-totals">
+              <td>Total:</td>
+              <td>$20.23</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="checkout" type="button">Place Order</button>
+      </section>
+    </div>
+  </body>
